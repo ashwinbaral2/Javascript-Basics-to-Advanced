@@ -74,14 +74,14 @@ console.log(newVar);      // 4            ---> Push() returns the new length
 // ========================
 //! TASK 5: Mixed array experimentation
 // ========================
-// Instructions:
-// 1. Create an array with numbers, strings, and a nested array:
-//    const arr = [1, "hello", [2, 3]]
-// 2. Try shallow copy, deep copy, and modify elements at different levels
-// 3. Print original and copied arrays after each modification
-// 4. Observe which changes affect the original and which do not
+//^ Instructions:
+//^ 1. Create an array with numbers, strings, and a nested array:
+//^    const arr = [1, "hello", [2, 3]]
+//^ 2. Try shallow copy, deep copy, and modify elements at different levels
+//^ 3. Print original and copied arrays after each modification
+//^ 4. Observe which changes affect the original and which do not
 
-// Your code here
+//& Your code here
 // --------------------
 const X1 = [1, "hello", [2, 3]]
 const X2 = [...X1]

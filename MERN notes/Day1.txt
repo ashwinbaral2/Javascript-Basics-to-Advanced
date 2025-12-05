@@ -1,0 +1,48 @@
+ 
+ 
+       *MERN Stack – Day 1 Quick Revision Notes*
+        =========================================
+
+1. String Slice (JS)
+----------------------------------------------
+slice(start, end) → extracts part of a string.
+
+Original string unchanged.
+
+Negative index allowed.
+
+Example: "hello".slice(1,4) → "ell".
+
+2. AI Agent
+------------------------------------------------------
+Program that observes, decides, and acts automatically. 
+---> eg. ask gemini to create a reminder for interview.
+
+Used in automation, chatbots, backend workflows.
+
+3. Coming Tomorrow (Bholi)
+--------------------------
+Arrays
+
+Objects
+
+Data Structures
+
+Algorithms
+
+4. Coming Day After Tomorrow (Parsi)
+---------------------------------------------------------
+Git basics: commit, branch, push/pull, GitHub repo setup.
+
+5. Day-1 Essentials
+----------------------------------------------
+
+JS basics: variables (let, const), data types.
+
+console.log() usage.
+
+Run JS with Node: node file.js.
+
+MERN overview: MongoDB, Express, React, Node.
+
+Setup: Node.js + VS Code.

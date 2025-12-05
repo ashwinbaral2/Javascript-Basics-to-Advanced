@@ -1,0 +1,52 @@
+
+					BIG O NOTATIONS
+					===============
+_____________________________________________________________________________________________________________________________________
+	Big O		Description		Real-life Analogy					Coding Example
+_____________________________________________________________________________________________________________________________________
+	O(1)		Constant time		Unlocking your phone with FaceID			arr[0]
+	O(log n)	Logarithmic time	Guessing a number by halving the range			Binary search
+	O(n)		Linear time		Searching for a pen in a messy drawer			Simple for loop over array
+	O(n log n)	Linearithmic time	Sorting clothes by dividing into piles then organizing	Merge sort, Quick sort, arr.sort()
+	O(n²)		Quadratic time		Matching all socks in a huge laundry pile		Nested for loops
+	O(2ⁿ)		Exponential time	Overthinking what to eat with many choices		Naive recursive Fibonacci
+	O(n!)		Factorial time		Trying every possible seating arrangement for friends	Generating all permutations
+______________________________________________________________________________________________________________________________________
+
+
+// O(1)  - Constant time
+// Access any index instantly
+arr[5];                   // example
+
+// O(log n) - Logarithmic
+// Halve problem each step
+binarySearch(sortedArr, x);
+
+// O(n) - Linear
+// Touch every element once
+for(let i=0;i<arr.length;i++) { console.log(arr[i]); }
+
+// O(n log n) - Linearithmic
+// Efficient sort: divide + conquer
+arr.sort((a,b)=>a-b);
+
+// O(n^2) - Quadratic
+// Nested loops, check every pair
+for(let i=0;i<arr.length;i++)
+  for(let j=0;j<arr.length;j++) console.log(i,j);
+
+// O(2^n) - Exponential
+// Every step branches into 2
+function fib(n){ return n<=1?n:fib(n-1)+fib(n-2); }
+
+// O(n!) - Factorial
+// All permutations
+function permute(arr){
+  if(arr.length<=1) return [arr];
+  let res=[];
+  for(let i=0;i<arr.length;i++){
+    let rest=arr.slice(0,i).concat(arr.slice(i+1));
+    for(let p of permute(rest)) res.push([arr[i],...p]);
+  }
+  return res;
+}

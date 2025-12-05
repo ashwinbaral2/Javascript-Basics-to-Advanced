@@ -1,0 +1,40 @@
+
+		*Day 4: Core Git Commands & ACP Flow*
+		=====================================
+
+1. ACP (Add → Commit → Push)
+-----------------------------
+	Standard Git steps to save and upload changes.
+
+2. Basic Git Commands
+-----------------------
+	git checkout -b yourbranch	=> to create a branch
+	git add .			=> stages all current changes in the folder for the next commit.
+	git commit -m "chai pilo"	=> saves the staged changes to Git’s history with a descriptive message.
+	git push -u origin yourbranch	=> uploads your local commits from the branch to the remote repository on GitHub.
+
+
+3. Important Git Basics (Must Know)
+------------------------------------
+	git pull → get latest code.
+
+	git fetch → check updates without merging.
+
+	git status → view current changes.
+
+	git merge → combine branches.
+
+	.gitignore → ignore specific files/folders.
+
+	git stash → save changes temporarily.
+
+4. Good Practices
+------------------
+
+Clear commit messages.
+
+Use feature branches for every task.
+
+Create Pull Requests for merging.
+
+Learn how to handle merge conflicts.

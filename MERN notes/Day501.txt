@@ -1,0 +1,15 @@
+	->Besides MERN, there are also MEAN and MEVN as well as PERN.----> for learning JS.
+	->Job as FS-Developer, Frontend or Backend as well.(Full stack--> front end, backend and data base.)
+	->Full stack is more popular and easier to work with than someone with only one BG.
+	->Jobs --> Front end heavy FS Dev / Back-end heavy Dev
+	->Python Django---> more helpful
+	->Need My SQL & postgres more popular than MonngoDB 
+	->Web is made using nextjs and angular.
+	->Desktop is made using react native(for Mobile as well), Electron and Windows
+	->Andriod apps => java, kotlin and IOS apps => Swift, Objective C
+	->Library/ Framework => react is a library. Vuejs, reactnative, gatsby is framework
+
+
+
+
+

@@ -1,0 +1,33 @@
+for, while, do while ===> loops 
+var vs let vs const 
+
+
+doing for loop,
+	declare -- initialize -- iteration 
+	dev must know for loop but dont use it more often because of its tedious nature.
+	use map(), forEach() and filter() instead.
+
+these features are slower than for loop
+.reduce()
+.find()
+.findIndex()
+.fill()---> more features like maps and filter.
+
+
+
+for in
+What are functions? --> asked more in interviews...
+there are many types of function and it may take quite a bit of time...
+
+
+search for ---> jargon that i may need in interview for javascript
+
+compiler that complies the language from eng into nep...
+but its not practical in bigger projects --> only for fun stuff...
+function ==> parameters and argument
+formal parameters and actual arguments...
+
+
+// Arrow functions, Pure functions and impure functions 
+
+

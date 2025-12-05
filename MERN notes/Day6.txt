@@ -1,0 +1,20 @@
+Learned the basics revision...
+modern js ==> ES6+
+ES6 launch --> 2015
+
+Year	Tech		What Happened
+1995	JavaScript	Born at Netscape in 10 days
+1997	ECMAScript	JS gets standardized
+2005	AJAX		Modern dynamic web begins
+2009	Node.js		JS escapes the browser
+2010	AngularJS	Google introduces massive MVC framework
+2013	React		Component-based UI revolution
+2014	Vue.js		Simplified, community-driven alternative
+2020	Deno		Node.js creator fixes his “mistakes”
+2022 	Bun 		Everything should be fast, integrated, and zero-config
+
+Freecodecamp => do task given for mastering the basics...
+
+task ==> get to level 5 with 5 questions in each task (for minimum).
+
+
