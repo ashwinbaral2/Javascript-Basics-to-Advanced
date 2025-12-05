@@ -1,0 +1,46 @@
+React --> library
+=> diff betw library and framework in table format:
+
+react writes jsx 
+    ==> jsxml --- js inside html
+
+Data types in programming language (mainly javascript)
+    1. String:  sequence of characters used to represent text data --> one of primitive data type
+    2. Numbers:
+    3. Boolean:
+    4. null/undefined:
+    5. Object:
+    6. Symbol: 
+    7. BigInt:
+
+Variable : (let and const)
+Use camelCase for naming any variable.
+    let thisIsCamelCase;
+    let upperCase;
+    let freeCodeCamp;
+NOTE: do not use let, const, function or return word as variables.
+
+=> Strings are considered to be immutable.--> unchangeable after declaration.
+        (Unlike Array which is mutable)   --> changeable after declaration.
+
+String features:
+=> Concatenation:
+        Eg:1
+        let firstName = "John";
+        let lastName = "Doe";
+
+        let fullName = firstName + " " + lastName; 
+        console.log(fullName); // John Doe
+        --------------------------------------------
+        Eg:2
+        let greeting = 'Hello';
+        greeting += ', John!';
+
+        console.log(greeting); // "Hello, John!"
+
+
+
+
+
+
+
