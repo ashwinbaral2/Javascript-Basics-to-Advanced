@@ -20,6 +20,20 @@ sub(5, 3);//Output: 2   ---> Arrow function
 
 2. Ternary Operators
 =====================
+//Use of ternary operators 
+--> basically short form of if-statement.
+//To check wheather you are Adult or Minor
+let age = 28;
+let status = age>=18 ? "Adult" : "Minor"
+console.log(status)//Adult
+//To check wheather you passed or failed
+let score = 40;
+let result = score>=27 ? "Pass" : "Fail"
+console.log(result);//Pass
+//To check wheather are senior citizen or not
+age = 45;
+let jobStatus = age>=60 ? "Retire" : "Active"
+console.log(jobStatus)//Active
 
 
 
