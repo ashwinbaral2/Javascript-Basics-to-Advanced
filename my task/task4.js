@@ -7,28 +7,60 @@
 // =============================
 
 // Q1: Use a ternary to check if a number is positive or negative.
-
+let num = 10;
+let numCheck = num >= 0 ? "Positive" : "Negative";
+console.log(numCheck);
 // Q2: Use a ternary to assign "Adult" or "Minor" based on an age value.
-
+let age = 30;
+let ageGroup = age >= 18 ? "Adult" : "Minor";
+console.log(ageGroup);
 // Q3: Given a variable "score", use nested ternaries to assign grades A, B, C, or D.
+let score = 82;
+let result = score >= 80 ? "A" :
+    score >= 60 ? "B" :
+        score >= 40 ? "C" :
+            "D"
+//nested ternary 
+console.log(result);//A
 
 // Q4: Use a ternary inside a function that returns "Even" or "Odd".
-
+const num1 = (n) => (n % 2 === 0 ? "Even" : "Odd")
+//using arrow function
+console.log(num1(10));
 // Q5: Use a ternary to pick a default username if the given one is null.
-
-
+let user = null;
+let userName = user === null ? "adminUser123" : ""
+console.log(userName);//adminUser123
 // =============================
 // SECTION 2: for, while, do-while LOOPS
 // =============================
 
+
 // Q6: Write a for loop that prints numbers 1 to 20.
+for (i = 0; i <= 20; i++) {
+    console.log(i);
+}//0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
 
 // Q7: Write a while loop that counts down from 10 to 1.
+let j = 10;
+while (j >= 1) {
+    console.log(j);
+    j--;
+}
 
 // Q8: Write a do-while loop that runs at least once, printing numbers until 5.
+let k = 5
+do {
+    console.log(k);
+    k--;
+} while (k >= 1)
 
-// Q9: Sum all numbers from 1 to 100 using a for loop.
 
+//Q9:Sum all numbers from 1 to 100 using a for loop.
+let sum = 0;
+for (p = 0; p <= 100; p++) {
+    sum += p;
+}
 // Q10: Use a while loop to print only even numbers from 2 to 30.
 
 
