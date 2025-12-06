@@ -35,7 +35,6 @@ console.log(userName);//adminUser123
 // SECTION 2: for, while, do-while LOOPS
 // =============================
 
-
 // Q6: Write a for loop that prints numbers 1 to 20.
 for (i = 0; i <= 20; i++) {
     console.log(i);
@@ -61,22 +60,42 @@ let sum = 0;
 for (p = 0; p <= 100; p++) {
     sum += p;
 }
+
 // Q10: Use a while loop to print only even numbers from 2 to 30.
+let q = 2;
+while (q <= 30) {
 
-
+    console.log(q);
+    q = q + 2;
+}
 // =============================
 // SECTION 3: forEach, map, filter
 // =============================
 
 // Q11: Use forEach to print each item in an array [2, 4, 6, 8].
-
+const evenNum = [2, 4, 6, 8];
+let evenNums = evenNum.forEach(num => console.log(num));//2 4 6 8 
+console.log(evenNums);//undefined
+//-----------------------------------------------------------
 // Q12: Use map to multiply each element of an array by 10.
-
+let evenNumMaps = evenNum.map(num => num * 10);
+console.log(evenNumMaps);// [ 20, 40, 60, 80 ]
+//-----------------------------------------------------------
 // Q13: Use filter to keep only odd numbers from an array.
-
+let nums = [1, 2, 3, 4, 5, 6, 7];
+let numsFilter = nums.filter(num => num % 2 === 0);
+console.log(numsFilter);//[ 2, 4, 6 ]
+//-----------------------------------------------------------
 // Q14: Use map to convert an array of strings to uppercase.
-
+const stringValue = ["Ram", "Shyam", "Krishna", "Hari"];
+let stringUpperCase = stringValue.map(name => name.toUpperCase());
+console.log(stringUpperCase);//[ 'RAM', 'SHYAM', 'KRISHNA', 'HARI' ]
+//-----------------------------------------------------------
 // Q15: Use filter to remove all values less than 50 from [12, 99, 54, 33, 100].
+let nums1 = [12, 99, 54, 33, 100];
+let numFilters = nums1.filter(num => num < 50)
+console.log(numFilters)//[ 12, 33 ]
+//-----------------------------------------------------------
 
 
 // =============================
