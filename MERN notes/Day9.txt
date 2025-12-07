@@ -1,0 +1,16 @@
+functions are ineffective --- value sits in the global variable value.
+
+//anonymous functions
+//IIFE
+//pure and impure functions
+
+unit testing ---- testing done by devs
+- write code in isolation seperately for existing code
+
+//jest functions 
+
+//Interview qn --> TDD *test-driven-development*
+write pure function as much as possible but in real world 
+application, outer data base has to be used so it becomes 
+impure function
+
