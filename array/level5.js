@@ -15,6 +15,9 @@
 // })
 // console.log(filteredArr); // [5, 4]
 //--------------------
+// Condition Exercises
+//Difficulty Level 5
+// Solve using array.map() and conditional logic
 
 
 //Q1. if item is divisible by 2, then multiply it by 3 else multiply it by 2
@@ -28,9 +31,12 @@ return num*2}
 }                  
 )
 console.log(check);//[ 10, 2, 12 ]
-
+//---------------------------------------------------------------
 //Q2. use filter to get only those items which are greater than 2
 // expected output: [5,4]
 
 const arrFilter = arr.filter(item => (item>2))
 console.log(arrFilter);//[ 5, 4 ]
+//---------------------------------------------------------------
+
+
