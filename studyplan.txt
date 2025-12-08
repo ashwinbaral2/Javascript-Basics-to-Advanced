@@ -1,0 +1,91 @@
+/*
+JAVASCRIPT MASTERY TOPICS — CLEAN NOTE VERSION
+Essential topics you must know to confidently say you understand JavaScript.
+*/
+
+// 1. BASIC CONCEPTS
+// - Variables (var, let, const)
+// - Data types (number, string, boolean, null, undefined, symbol, bigint)
+// - Type coercion
+// - Template literals
+// - Strict mode
+
+// 2. OPERATORS
+// - Arithmetic operators
+// - Comparison operators
+// - Logical operators
+// - Ternary operator
+// - Spread & rest operators
+
+// 3. CONTROL FLOW
+// - if / else if / else
+// - switch
+// - for loops
+// - while / do-while loops
+// - break & continue
+
+// 4. FUNCTIONS
+// - Function declarations
+// - Function expressions
+// - Arrow functions
+// - Default parameters
+// - Callback functions
+// - Higher-order functions
+
+// 5. ARRAYS
+// - CRUD operations
+// - Important methods (map, filter, reduce, find, sort, push, pop, shift, unshift)
+// - Array destructuring
+// - Spread operator uses
+
+// 6. OBJECTS
+// - Object literals
+// - CRUD operations
+// - Object destructuring
+// - Object methods
+// - this keyword basics
+
+// 7. ERROR HANDLING
+// - try / catch
+// - throw
+// - Custom errors
+
+// 8. DOM MANIPULATION (Browser JS)
+// - Selecting elements
+// - Editing content & styles
+// - Event listeners
+// - Creating & removing elements
+
+// 9. ASYNC JAVASCRIPT
+// - Callbacks
+// - Promises
+// - async / await
+// - Fetch API
+// - Event loop basics
+
+// 10. MODULES
+// - import / export
+// - Default vs named exports
+
+// 11. ADVANCED JS CONCEPTS
+// - Closures
+// - Scope (global, function, block)
+// - Hoisting
+// - Prototype & prototypal inheritance
+// - Classes (ES6)
+// - the this keyword in depth
+// - Pure vs impure functions
+
+// 12. DATA STRUCTURE & ALGO PRACTICE
+// - String manipulation
+// - Array transformations
+// - Frequency maps (objects)
+// - Sorting logic
+// - Two-pointer basics
+
+// 13. MINI PROJECT AREAS
+// - To-do app
+// - Calculator
+// - Weather fetcher (API)
+// - Notes app
+// - Small browser games (snake, tictactoe)
