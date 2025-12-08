@@ -55,6 +55,23 @@ git stash                     → temporarily save uncommitted work
 git clean                     → remove untracked files
 
 
+
+8) Additional Commands
+-----------------------
+// delete branch locally
+git branch -d localBranchName
+
+// delete branch remotely
+git push origin --delete remoteBranchName
+
+// to undo push in the main from branch 
+git reset --hard HEAD~1
+git push origin main --force
+
+
+
+
+
 ===============================
  Terminal Commands — Quick Groups
 ===============================

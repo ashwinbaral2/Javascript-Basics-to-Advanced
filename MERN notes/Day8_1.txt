@@ -1,46 +1,137 @@
-React --> library
-=> diff betw library and framework in table format:
+/* ======================================================
+   React & JavaScript Basics
+   Separate Notes File
+   ======================================================
+*/
 
-react writes jsx 
-    ==> jsxml --- js inside html
+// ======================================================
+// 1. React Basics
+// ======================================================
 
-Data types in programming language (mainly javascript)
-    1. String:  sequence of characters used to represent text data --> one of primitive data type
-    2. Numbers:
-    3. Boolean:
-    4. null/undefined:
-    5. Object:
-    6. Symbol: 
-    7. BigInt:
+/*
+React:
+- React is a JavaScript LIBRARY
+- It is used for building User Interfaces (UI)
+- Commonly used for Single Page Applications (SPA)
+*/
 
-Variable : (let and const)
-Use camelCase for naming any variable.
-    let thisIsCamelCase;
-    let upperCase;
-    let freeCodeCamp;
-NOTE: do not use let, const, function or return word as variables.
+// ======================================================
+// Difference Between Library and Framework
+// ======================================================
 
-=> Strings are considered to be immutable.--> unchangeable after declaration.
-        (Unlike Array which is mutable)   --> changeable after declaration.
+/*
+| Feature          | Library (React)             | Framework (Angular, Django) |
+|------------------|-----------------------------|-----------------------------|
+| Control Flow     | Developer controls flow     | Framework controls flow     |
+| Flexibility      | High                        | Less flexible               |
+| Opinionated      | No                          | Yes                         |
+| Structure        | You choose the structure    | Fixed structure             |
+| Learning Curve   | Easier                      | Steeper                     |
 
-String features:
-=> Concatenation:
-        Eg:1
-        let firstName = "John";
-        let lastName = "Doe";
+Quick Rule:
+Library   -> You call the code
+Framework -> Code calls you
+*/
 
-        let fullName = firstName + " " + lastName; 
-        console.log(fullName); // John Doe
-        --------------------------------------------
-        Eg:2
-        let greeting = 'Hello';
-        greeting += ', John!';
+// ======================================================
+// 2. JSX in React
+// ======================================================
 
-        console.log(greeting); // "Hello, John!"
+/*
+JSX:
+- Stands for JavaScript XML
+- Allows writing JavaScript inside HTML-like syntax
+- Makes UI code readable and expressive
+*/
 
+const element = <h1>Hello React</h1>;
 
+// ======================================================
+// 3. JavaScript Data Types
+// ======================================================
 
+/*
+Data Types in JavaScript:
 
+Primitive Types:
+1. String     -> sequence of characters (text)
+2. Number     -> integer and floating-point values
+3. Boolean    -> true or false
+4. null       -> intentional empty value
+5. undefined  -> declared but not assigned
+6. Symbol     -> unique identifier
+7. BigInt     -> very large integers
 
+Non-Primitive Type:
+8. Object     -> arrays, objects, functions
+*/
 
+// Examples
+let username = "John";        // String
+let score = 95;               // Number
+let isAdmin = false;          // Boolean
+let emptyValue = null;        // null
+let notAssigned;              // undefined
+let uniqueId = Symbol("id"); // Symbol
+let bigNumber = 1234567890123456789n; // BigInt
+let data = {};                // Object
 
+// ======================================================
+// 4. Variables in JavaScript
+// ======================================================
+
+/*
+Variables are containers for storing data.
+
+Use:
+- let  -> when value can change
+- const-> when value should not change
+
+Naming Convention:
+- Use camelCase
+*/
+
+let thisIsCamelCase;
+let upperCase;
+let freeCodeCamp;
+
+/*
+NOTE:
+Do NOT use reserved keywords as variable names
+(let, const, function, return, etc.)
+*/
+
+// ======================================================
+// 5. Strings in JavaScript
+// ======================================================
+
+/*
+String:
+- Primitive data type
+- Sequence of characters
+- Immutable (cannot be changed after creation)
+
+NOTE:
+- Arrays are mutable (changeable)
+*/
+
+// ----------------------
+// String Concatenation
+// ----------------------
+
+// Example 1
+let firstName = "John";
+let lastName = "Doe";
+let fullName = firstName + " " + lastName;
+
+console.log(fullName); // John Doe
+
+// Example 2
+let greeting = "Hello";
+greeting += ", John!";
+
+console.log(greeting); // Hello, John!
+
+// ======================================================
+// END OF FILE
+// ======================================================
