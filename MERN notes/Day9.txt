@@ -14,3 +14,89 @@ write pure function as much as possible but in real world
 application, outer data base has to be used so it becomes 
 impure function
 
+/* ==================================================
+   functions_and_testing_notes.js
+   ==================================================
+   Topic: Functions, Purity, and Unit Testing
+   ================================================== */
+
+/* 1. Functions and Global Variables
+   ---------------------------------
+   Avoid relying on global variables. Functions should take parameters
+   and return values to be predictable.
+*/
+
+// BAD: modifies global variable
+let value = 10;
+function addFive() {
+    value += 5; // side effect
+}
+addFive();
+console.log("Global value after addFive():", value); // 15
+
+// GOOD: pure function
+function addFivePure(val) {
+    return val + 5;
+}
+console.log("addFivePure(10):", addFivePure(10)); // 15
+
+/* 2. Anonymous Functions
+   ---------------------
+   Functions without a name, useful as callbacks or inline definitions
+*/
+const double = function(x) { return x * 2; }
+console.log("double(5):", double(5));
+
+/* 3. IIFE (Immediately Invoked Function Expression)
+   ------------------------------------------------
+   Runs automatically when defined; often used for initialization
+*/
+(function() {
+    console.log("IIFE executed immediately!");
+})();
+
+/* 4. Pure vs Impure Functions
+   ---------------------------
+   Pure function: depends only on input, no side effects
+   Impure function: interacts with external state or modifies data
+*/
+
+// Pure function example
+function square(x) {
+    return x * x;
+}
+console.log("square(4):", square(4));
+
+// Impure function example
+let counter = 0;
+function increment() {
+    counter++; // modifies external state
+}
+increment();
+console.log("Counter after increment():", counter);
+
+/* 5. Unit Testing
+   ----------------
+   Testing small parts of code in isolation to ensure correctness
+   Example using Jest (JavaScript testing library):
+*/
+
+// test('adds 2 + 5 to equal 7', () => {
+//     expect(addFivePure(2)).toBe(7);
+// });
+
+/* 6. Test-Driven Development (TDD)
+   ---------------------------------
+   - Write tests first
+   - Then implement code to pass the tests
+   - Encourages pure functions and clean design
+*/
+
+/* 7. Best Practices Summary
+   -------------------------
+   1. Minimize global variables
+   2. Prefer pure functions where possible
+   3. Write unit tests for critical logic
+   4. Use IIFE for one-time execution
+   5. Accept that some impure functions are necessary in real-world apps
+*/

@@ -5,7 +5,7 @@ let people = [
 ];
 // Sort by age ascending
 // Expected Output: [{name: "B", age: 19}, {name: "A", age: 25}, {name: "C", age: 30}]
-people_age = people.map(peoples=>peoples.age)
+let people_age = people.map(peoples=>peoples.age)
 console.log(people_age);//[ 25, 19, 30 ]
 people_age.sort()
 console.log(people_age);//[ 19, 25, 30 ]---> using map property
