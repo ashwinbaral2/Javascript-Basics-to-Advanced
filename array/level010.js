@@ -18,3 +18,4 @@ let sum = 0
 arr3.forEach(item =>
     typeof item === "number" ? sum += item : null);
 console.log(sum);
+

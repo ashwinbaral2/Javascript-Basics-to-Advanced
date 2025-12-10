@@ -108,7 +108,7 @@ console.log(numFilters)//[ 12, 33 ]
 // SECTION 4: reduce
 // =============================
 /*
-arr.reduce((accumulator, currentElement) => {
+arr.reduce((container , nextItem, nextID, OriginalArray) => {
     ~do something
     return accumulator;
 }, initialValue)
@@ -116,13 +116,13 @@ arr.reduce((accumulator, currentElement) => {
 
 // Q16: Use reduce to add all numbers from an array [1, 2, 3, 4].
 const num2 = [1, 2, 3, 4];
-const num2Reduce = num2.reduce((a,b)=>a+b, 0);
-console.log(num2Reduce);//10
+const num2Sum = num2.reduce((a,b)=>a+b, 0);
+console.log(num2Sum);//10
 //-----------------------------------------------------------
 // Q17: Use reduce to find the maximum value in [10, 5, 22, 8].
 const num3 = [10, 5, 22, 8];
-const num3Filter = num3.reduce((a,b)=> Math.max(a,b));
-console.log(num3Filter);//22
+const num3Max = num3.reduce((a,b)=> Math.max(a,b));
+console.log(num3Max);//22
 //-----------------------------------------------------------
 // Q18: Use reduce to count occurrences of each item in ["a", "b", "a", "c", "b", "a"].
 const items = ["a", "b", "a", "c", "b", "a"];

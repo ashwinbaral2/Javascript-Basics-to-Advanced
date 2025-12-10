@@ -1,0 +1,31 @@
+// Career & Projects
+// ------------------
+// - Keep hunting for interviews & opportunities.
+// - Build solid, impressive projects:
+//     * Super-app style platforms
+//     * Real-time chat applications
+// - Strengthen fundamentals in problem-solving.
+
+// Reduce Basics
+// -------------
+// reduce(container, nextVal, nextID, originalArr)
+// - With initial value: runs n times.
+// - Without initial value: runs n-1 times.
+
+// Array Method Cheat Sheet
+// ----------------------------------------
+// | Goal                   | Method      |
+// | ---------------------- | ----------- |
+// | Transform items        | map         |
+// | Remove items           | filter      |
+// | Do something for each  | forEach     |
+// | Build ANYTHING custom  | reduce      |
+// | Check ALL items        | every       |
+// | Check ANY item         | some        |
+// | Get ONE item           | find        |
+// | Get index of that item | findIndex   |
+// | Does it exist?         | includes    |
+    
+// Next Topics
+// -----------
+// - Objects (tomorrow)
