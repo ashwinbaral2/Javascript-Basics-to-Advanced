@@ -1,35 +1,57 @@
 // JavaScript Practice Set
 
-// 1 – Sum of Negative Numbers
+// Level 1 – Sum of Negative Numbers
 // Q1. Given an array of numbers, calculate the sum of all negative values.
 // Example Input: [-3, 5, -7, 10, -2]
 // Expected Output: -12
+const arrInput = [-3, 5, -7, 10, -2]
+const sumNegative = arrInput.reduce((container, nextItem) => nextItem < 0 ? container + nextItem : container, 0);
+console.log(sumNegative);
 
-
-
-// 2 – Count Even Numbers
+// Level 2 – Count Even Numbers
 // Q2. Given an array of numbers, count how many even numbers exist.
 // Example Input: [1, 2, 4, 7, 10]
 // Expected Output: 3
 
-
-// 3 – Character Frequency in a String
+let count = {}
+const numbers = [1, 2, 4, 7, 10];
+const numbersCount = numbers.reduce((container, nextItem) => { return nextItem % 2 === 0 ? container + 1 : container }, 0);
+console.log(numbersCount);
+// Level 3 – Character Frequency in a String
 // Q3. Given a string, count how many times each character appears.
 // Use: split() and reduce()
-// Example Input: "hello"
-// Expected Output: { h:1, e:1, l:2, o:1 }
+// Example Input: "hello world"
+// Expected Output: 
+
+const greet = "Hello World"
+const stringCount = greet.split("")
+    .reduce((container, nextItem) => {
+        container[nextItem] ? container[nextItem] += 1 : container[nextItem] = 1;
+        return container;
+    }
+        , {})
+console.log(stringCount)
 
 
-// 4 – Flatten a 2D Array
+
+// Level 4 – Flatten a 2D Array
 // Q4. Flatten a 2D array into a single array using reduce.
 // Example Input: [[1,2],[3,4],[5]]
 // Expected Output: [1,2,3,4,5]
+const nestedArr = [[1, 2], [3, 4], [5]];
+
+const flatArr = nestedArr.reduce((container, nextItem) => { return container.concat(nextItem) }, []);
+console.log(flatArr);
+console.log(nestedArr.flat(Infinity));
 
 
-// 5 – Maximum Number Using Reduce
+// Level 5 – Maximum Number Using Reduce
 // Q5. Find the maximum number in an array using reduce.
 // Example Input: [3, 9, 1, 20, 7]
 // Expected Output: 20
+const num = [3, 9, 1, 20, 7];
+const maxNum = num.reduce((container, nextItem) => container < nextItem ? nextItem : container);
+console.log(maxNum);
 
 
 // 6 – Sort + Sum of First 3 Elements

@@ -1,0 +1,102 @@
+// Day 012 – JavaScript Objects (Clean Notes)
+// ------------------------------------------------------------
+
+// 1. What Are Objects?
+// ------------------------------------------------------------
+// Objects store data in key-value pairs.
+const person = {
+  name: "Aadi",
+  age: 20,
+  hobby: "Chess"
+};
+
+
+// 2. Accessing Values
+// ------------------------------------------------------------
+console.log(person.name);        // Dot notation
+console.log(person["age"]);     // Bracket notation
+
+
+// 3. Adding, Updating, Deleting
+// ------------------------------------------------------------
+person.country = "Nepal";       // Add
+person.age = 21;                 // Update
+delete person.hobby;             // Delete
+
+
+// 4. Functions Inside Objects
+// ------------------------------------------------------------
+const user = {
+  username: "coder123",
+  greet() {
+    return "Welcome, coder!";
+  }
+};
+console.log(user.greet());
+
+
+// 5. Nested Objects and Arrays
+// ------------------------------------------------------------
+const student = {
+  name: "Maya",
+  skills: ["JS", "HTML", "CSS"],
+  address: {
+    city: "Kathmandu",
+    ward: 5
+  }
+};
+
+console.log(student.skills[0]);       // Access array
+console.log(student.address.city);    // Access nested object
+
+
+// 6. Object Methods for Data Handling
+// ------------------------------------------------------------
+const car = {
+  brand: "Toyota",
+  model: "Corolla",
+  year: 2020
+};
+
+console.log(Object.keys(car));       // ["brand", "model", "year"]
+console.log(Object.values(car));     // ["Toyota", "Corolla", 2020]
+console.log(Object.entries(car));    // [["brand", "Toyota"], ...]
+
+
+// 7. Copying Objects
+// ------------------------------------------------------------
+const copy1 = { ...car };            // Shallow copy
+const copy2 = structuredClone(car);  // Deep copy
+
+
+// 8. Common Array Operations + Objects
+// ------------------------------------------------------------
+const numbers = [5, 2, 9, 1];
+
+console.log(numbers.sort());         // Sort
+console.log(numbers.reverse());      // Reverse
+console.log(numbers.map(n => n * 2));    // Map
+console.log(numbers.filter(n => n > 3)); // Filter
+
+
+// 9. Useful Concepts
+// ------------------------------------------------------------
+// - Choosing the right data structure affects performance.
+// - Prefer objects when accessing data by keys.
+// - Prefer arrays for lists.
+// - Nested structures help organize complex information.
+
+
+// 10. LinkedIn 150-Day Coding Challenge
+// ------------------------------------------------------------
+// Posting daily progress builds consistency.
+// Good for showcasing discipline and growth.
+// Post Format Recommendation:
+//   - Day number
+//   - Topic learned
+//   - Small code snippet
+//   - Short reflection or takeaway
+
+
+// End of Day 012 Notes
+// ------------------------------------------------------------
