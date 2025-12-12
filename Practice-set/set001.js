@@ -15,7 +15,8 @@ console.log(sumNegative);
 
 let count = {}
 const numbers = [1, 2, 4, 7, 10];
-const numbersCount = numbers.reduce((container, nextItem) => { return nextItem % 2 === 0 ? container + 1 : container }, 0);
+const numbersCount = numbers
+    .reduce((container, nextItem) => { return nextItem % 2 === 0 ? container + 1 : container }, 0);
 console.log(numbersCount);
 // Level 3 – Character Frequency in a String
 // Q3. Given a string, count how many times each character appears.
