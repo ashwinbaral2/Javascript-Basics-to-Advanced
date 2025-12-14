@@ -1,0 +1,16 @@
+for in vs for of --- loop
+
+
+presentation slide 
+1. closures in javascript
+2. hoisting in javascript
+3. destructuring using rest operator in array and object
+4. prototypes and prototypal inheritance 
+5. DS : stack and queue
+6. DS : graph and tree 
+7. Time and space complexity 
+8. call stack event loop and asynchronous programming
+9. debouncing and  throttling
+10. callback function and callback hell
+
+Tomorrow == Typescript basics 
