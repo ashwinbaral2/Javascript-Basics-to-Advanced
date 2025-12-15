@@ -1,0 +1,10 @@
+optional chaining : 
+
+TO ACCESS 
+object --- dot operator
+array --- index
+
+
+
+
+
