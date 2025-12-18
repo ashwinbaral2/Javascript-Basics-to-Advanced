@@ -9,9 +9,9 @@ console.log(str1.length); //11
 //-------------------------------------------------------
 
 // Q2: Access first and last characters
-let str2 = "JavaScript";
+let str2 = "JavaScript"; 
 console.log(str2[0]); //first character
-console.log(str2[str2.length - 1]); //last character
+console.log(str2[str2.length - 1]); // last character
 
 //-------------------------------------------------------
 

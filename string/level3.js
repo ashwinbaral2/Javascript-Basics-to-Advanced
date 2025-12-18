@@ -1,4 +1,4 @@
-// Level 2 String Practice Questions
+// Level 3 String Practice Questions
 
 // Q1: Reverse a string
 let str1 = "Hello";
