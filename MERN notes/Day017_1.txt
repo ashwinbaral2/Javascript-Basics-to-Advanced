@@ -1,0 +1,42 @@
+
+TERMINOLOGIES:
+============================================================================
+
+1. Synchronous functions:
+---------------------
+ Those functions that does code execution line by line turn-wise.
+ Each instructions waits for its previous instruction to complete execution.
+
+for example;
+console.log('task 1'); ---> first executed
+console.log('task2');  ---> second executed
+console.log('task3');  ---> third executed
+==============================================================================
+
+2. Asynchronous Functions:
+-----------------------
+    Those functions that get executed regardless of which order it is kept in
+    they dont wait for their turn in the line ...they are executed regardless of the order
+    think of a code line that fetches data from other sites that may take 2 3 sec causing 
+    delay in code execution and the data is not even required to run next line of code.
+
+ Analogy: Daraz bata saman order garesi we do our day to day thing and not just wait for delivery
+
+example: setTimeout() ---> Asynchronous function by default.
+Divided into following: callback functions, promises and await.
+
+Callback functions 
+--------------------
+ A function that is passed as an argument to another function.
+
+function wakeup(callback){
+    console.log("I woke up at 5 AM.")
+    callback();
+}
+function brushTeeth(){
+    console.log("I have brushed my teeth");
+}
+wakeup(brushTeeth);
+//I woke up at 5 AM.
+//I have brushed my teeth.
+
