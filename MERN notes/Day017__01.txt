@@ -1,0 +1,142 @@
+// ==========================================
+// JS OBJECT PROPERTY DESCRIPTORS — QUICK NOTE
+// ==========================================
+
+/*
+Every object property in JavaScript has a hidden
+"property descriptor" behind it.
+
+You usually see the VALUE,
+but JS also tracks HOW that value behaves.
+*/
+
+// ------------------------------------------
+// 1️⃣ The THREE CORE FLAGS (MOST IMPORTANT)
+// ------------------------------------------
+
+/*
+writable:
+- Can the value be changed?
+*/
+const obj1 = { a: 10 };
+Object.defineProperty(obj1, "a", { writable: false });
+obj1.a = 20;        // ❌ ignored (or error in strict mode)
+
+/*
+enumerable:
+- Does the property appear in loops?
+*/
+const obj2 = {};
+Object.defineProperty(obj2, "hidden", {
+  value: 42,
+  enumerable: false
+});
+Object.keys(obj2); // [] → hidden is skipped
+
+/*
+configurable:
+- Can the property descriptor be changed or deleted?
+*/
+const obj3 = {};
+Object.defineProperty(obj3, "x", {
+  value: 5,
+  configurable: false
+});
+delete obj3.x;     // ❌ fails
+// Object.defineProperty(obj3, "x", ...) ❌ fails
+
+
+// ------------------------------------------
+// 2️⃣ VALUE vs ACCESSOR PROPERTIES
+// ------------------------------------------
+
+/*
+Value property:
+- Uses value + writable
+*/
+const obj4 = { y: 10 };
+
+/*
+Accessor property:
+- Uses get / set
+- NO writable flag
+*/
+const obj5 = {
+  get z() {
+    return this._z;
+  },
+  set z(val) {
+    this._z = val;
+  }
+};
+
+
+// ------------------------------------------
+// 3️⃣ IMPORTANT OBJECT METHODS
+// ------------------------------------------
+
+/*
+Object.getOwnPropertyDescriptor(obj, key)
+→ Reveals the full descriptor
+*/
+Object.getOwnPropertyDescriptor(obj1, "a");
+
+/*
+Object.defineProperty(obj, key, descriptor)
+→ Create or modify ONE property
+*/
+Object.defineProperty(obj1, "a", {
+  writable: true
+});
+
+/*
+Object.defineProperties(obj, descriptors)
+→ Create or modify MANY properties at once
+*/
+Object.defineProperties(obj1, {
+  b: { value: 20, writable: true },
+  c: { value: 30, writable: false }
+});
+
+
+// ------------------------------------------
+// 4️⃣ STRUCTURE CONTROL (TOP-LEVEL)
+// ------------------------------------------
+
+/*
+Object.preventExtensions(obj)
+- No new properties
+*/
+Object.preventExtensions(obj1);
+
+/*
+Object.seal(obj)
+- No add / delete
+- writable still allowed
+*/
+Object.seal(obj1);
+
+/*
+Object.freeze(obj)
+- No add / delete / update
+*/
+Object.freeze(obj1);
+
+
+// ------------------------------------------
+// 5️⃣ ONE-LINE MEMORY RULES
+// ------------------------------------------
+
+/*
+writable     → can I change the value?
+enumerable   → can I see it in loops?
+configurable → can I redefine or delete it?
+
+freeze = seal + writable:false
+seal ≠ freeze
+descriptors control behavior, not just data
+*/
+
+// ==========================================
+// END
+// ==========================================
