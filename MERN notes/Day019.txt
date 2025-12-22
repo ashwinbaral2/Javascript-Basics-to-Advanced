@@ -1,0 +1,79 @@
+react made by  facebook team === jordan walke
+
+similar to react --- angular  --- made by Google team
+
+FRONT END DEVELOPING TOOLS:
+-------------------------------
+ ->React - web --- netflix, discord
+ ->React native ---framework to make mobile app : andriod/apple --- discord, yatri
+                --- there are lots of mobile develping framework: kotlin, swift, java, Objective C,
+                    Kotlin Multiplatform(for both andriod and apple), #C
+ ->React native windows --- Desktop apps : windows or MacOs by microsoft
+
+killedbygoogle.com
+angularjs --- killed by google (2010-2021)
+angular --- totally different thing
+vuejs 
+electron ---> js based framework --- vs code, skype
+
+vercel --- company
+ react based framework (nextjs): dont need express after learning next.js
+
+Shopify : remix, made fullstack framework
+Expo : react native
+Microsoft : react native windows
+
+vacancy combo: FE + BE === reactnative + node.js
+
+
+REACT
+
+—counterparts——
+—> angularjs:  google: 2010
+—> react: Facebook: 2013
+—> angular: google : 2016
+—> vuejs: 2014
+
+
+
+——Platform—
+React— web
+        —> Netflix, discord, etc
+React native. —— mobile app: iOS/android
+           —> discord, Tesla, 
+React native windows —— desktop app: windows/macOS
+               —> teams, ms office, xbox
+
+JS BASED DESKTOP APPS:    (popular ones built using electron)
+ - Visual Studio Code (VS Code)
+* Slack
+* Discord
+* GitHub Desktop
+* Skype 
+
+
+—community strength——
+microsoft: react native windows
+vercel: nextjs, use react based framework to create FE/BE 
+Shopify: Remix, full stack framework
+Expo: react native 
+
+
+— big adapters———
+- Whatsapp, instagram, Facebook
+- Netflix
+- Airbnb
+- Amazon
+- Discord
+- Uber
+- Paypal
+- Reddit
+- Linkedin
+
+need to check official documentation more than often for learning
+
+gatsby react 
+
+npm run dev -- to run the react project
+
+

@@ -6,3 +6,4 @@ let isStudent: boolean = true;
 let userName = "aswin";
 console.log(userName);
 console.log(age);
+
