@@ -40,3 +40,21 @@ wakeup(brushTeeth);
 //I woke up at 5 AM.
 //I have brushed my teeth.
 
+
+The event loop continuously checks whether the call stack is empty.
+If it is, the event loop takes the next callback from a queue (FIFO)
+and pushes it onto the call stack (which executes functions LIFO).
+
+
+Function calls push onto the call stack directly.
+The event loop only pushes callbacks from queues when the stack is empty.
+
+
+When functions depend on each other synchronously, they are stacked directly
+ in the call stack in LIFO order and execute accordingly.
+When asynchronous callbacks are involved, they are placed in a queue, 
+ and the event loop moves them to the call stack only after the call stack becomes empty.
+ Once that callback finishes, the stack clears again and the event loop may move the next queued task.
+
+The call stack handles “who calls whom.”
+The event loop handles “when waiting code is allowed to run.”
