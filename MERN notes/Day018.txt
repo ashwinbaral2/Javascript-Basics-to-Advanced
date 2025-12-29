@@ -1,3 +1,5 @@
+Date:  Dec 19, 2025 - fri
+
 Typescript cheatsheet to checkout...
 
 js === dynamic  ...but ts === static

@@ -1,3 +1,5 @@
+Date:  Date: Dec 03, 2025 - wed
+
 Learned the basics revision...
 modern js ==> ES6+
 ES6 launch --> 2015

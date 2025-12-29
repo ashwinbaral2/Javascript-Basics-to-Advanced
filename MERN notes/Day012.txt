@@ -1,3 +1,5 @@
+Date:  Date: Dec 11, 2025 - thu
+
 // Day 012 – JavaScript Objects (Clean Notes)
 // ------------------------------------------------------------
 

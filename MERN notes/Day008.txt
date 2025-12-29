@@ -1,3 +1,5 @@
+Date:  Date: Dec 05, 2025 - fri
+
 /* ======================================================
    JavaScript Core Notes (MERN Stack)
    Interview + Practical Focus

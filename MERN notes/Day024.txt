@@ -1,0 +1,46 @@
+
+Date:  Dec 29, 2025 - mon
+
+### ==== Day 024: MERN & React Notes ====
+
+1️⃣ Searching in Project
+-----------------------
+Ctrl + Shift + F: Find text globally in the project
+
+2️⃣ Event Features
+-----------------
+- onClick
+- onMouseHover
+- onMouseLeave
+
+3️⃣ Components
+-------------
+- Client Component vs Parent Component
+- Props, State, Refs
+
+4️⃣ MERN Stack Notes
+-------------------
+- MongoDB
+- Express (optional / not needed here)
+- Next.js (handles both frontend & backend)
+- 'use client' directive in Next.js
+
+5️⃣ Deno
+-------
+- Similar to Node.js
+- Created by Ryan Dahl
+
+6️⃣ Next.js Dynamic Pages
+------------------------
+- [id] syntax for creating dynamic pages (e.g., different page for each product)
+
+7️⃣ React Internals
+------------------
+- Reconciliation Algorithm
+- React Fiber Architecture
+
+8️⃣ State in React
+-----------------
+- State allows dynamic changes in UI
+- Example Task: Increment & Decrement Button
+  - Constraint: Negative numbers not allowed

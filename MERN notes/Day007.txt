@@ -1,3 +1,5 @@
+Date:  Date: Dec 04, 2025 - thu
+
 1. Preincrement and post increment of a variable (++a and a++) --> also works for subtraction
 2. functions like splice() replace() Math.round() Math.floor() .toFixed(2)
 3. factorial, for loop, Math.abs() Math.pow(), Math.min() Math.max()---> jagat

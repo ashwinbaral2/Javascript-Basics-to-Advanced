@@ -1,15 +1,44 @@
-	->Besides MERN, there are also MEAN and MEVN as well as PERN.----> for learning JS.
-	->Job as FS-Developer, Frontend or Backend as well.(Full stack--> front end, backend and data base.)
-	->Full stack is more popular and easier to work with than someone with only one BG.
-	->Jobs --> Front end heavy FS Dev / Back-end heavy Dev
-	->Python Django---> more helpful
-	->Need My SQL & postgres more popular than MonngoDB 
-	->Web is made using nextjs and angular.
-	->Desktop is made using react native(for Mobile as well), Electron and Windows
-	->Andriod apps => java, kotlin and IOS apps => Swift, Objective C
-	->Library/ Framework => react is a library. Vuejs, reactnative, gatsby is framework
+Date:  Date: Dec 01, 2025 - mon
+
+### ==== JavaScript & Full Stack Development Notes ====
 
 
+1️⃣ Full Stack Tech Stacks
+-------------------------
+MERN: MongoDB, Express, React, Node.js
+MEAN: MongoDB, Express, Angular, Node.js
+MEVN: MongoDB, Express, Vue.js, Node.js
+PERN: Postgres, Express, React, Node.js
 
+2️⃣ Job Roles
+-------------
+🔹 Frontend Developer: UI + client-side logic
+🔹 Backend Developer: Server-side logic + databases + APIs
+🔹 Full Stack Developer: Frontend + Backend + Database (versatile & in-demand)
 
+3️⃣ Full Stack Job Focus
+------------------------
+🌐 Frontend-heavy full stack: mostly client-side
+⚙️ Backend-heavy full stack: mostly server-side & database
 
+4️⃣ Backend & Database Notes
+-----------------------------
+🐍 Python + Django: useful for backend
+💾 Databases: MySQL & PostgreSQL (popular), MongoDB (used with JS stacks)
+
+5️⃣ Web & Desktop Development
+-----------------------------
+🌐 Web apps: Next.js, Angular
+🖥️ Desktop apps: React Native (also for mobile), Electron, Windows apps
+
+6️⃣ Mobile Development
+----------------------
+🤖 Android: Java, Kotlin
+🍏 iOS: Swift, Objective-C
+
+7️⃣ Libraries vs Frameworks
+---------------------------
+📚 Library: React (tools only, not full structure)
+🏗️ Frameworks: Vue.js, React Native, Gatsby (full structure + rules)
+
+### ==== End of Notes ====
