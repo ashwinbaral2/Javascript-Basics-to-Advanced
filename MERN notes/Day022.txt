@@ -1,1 +1,12 @@
 Date:  Dec 26, 2025 - fri
+
+not present in class
+
+learn components like nav-bar and side-bar
+
+google antigravity = free --- code editor --- useful apps for coding --- cursor as well= paid
+
+export vs export default == using export i can use it basically at any other page.
+
+javascript xml === jsx
+

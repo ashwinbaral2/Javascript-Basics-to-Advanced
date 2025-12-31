@@ -1,0 +1,127 @@
+
+Date: 31 December 2025 - wed
+
+### ==== Day 025: MERN & React Notes ====
+---
+
+## useState() Hook
+
+* A **React Hook** used to manage state inside functional components.
+* State = data that **changes over time** and affects UI rendering.
+* When state updates, **React re-renders the UI** automatically.
+* Helps keep UI and data in sync without manually touching the DOM.
+
+> Think of hooks as **batteries**: they power heavy lifting like UI updates so you don’t have to.
+
+---
+
+## Hooks (Big Picture)
+
+* Hooks let functional components do things that were once class-only.
+* Examples: state, side effects, context, refs.
+* They **simplify logic reuse** and keep components cleaner.
+* Heavy tasks like UI updates and lifecycle handling are abstracted away.
+
+---
+
+## lucide-react
+
+* A modern **icon library for React**.
+* Lightweight, tree-shakeable, and clean SVG icons.
+* Needs exploration:
+
+  * How to install
+  * How to import icons
+  * How to use icons as JSX components
+
+Example usage idea:
+
+* Import icon as a component
+* Use it directly inside JSX like a tag
+
+---
+
+## Importing & Using Components as Tags
+
+* React components can be used like **custom HTML tags**.
+* Must:
+
+  * Export the component
+  * Import it where needed
+* Component names must start with **capital letters**.
+
+This enables:
+
+* Reusable UI blocks
+* Clean and readable JSX
+
+---
+
+## JavaScript Coding Principles (To Check Online)
+
+* Write **readable** code before clever code
+* Prefer **immutability**
+* Keep functions **small and single-purpose**
+* Avoid unnecessary side effects
+* Use meaningful variable and function names
+* Follow consistency over personal style
+
+---
+
+## Template Literals
+
+* Uses backticks: `` `text` ``
+* Allows:
+
+  * String interpolation
+  * Multi-line strings
+
+Useful for:
+
+* Dynamic text
+* Cleaner concatenation
+
+---
+
+## Game Ideas (Future Practice)
+
+* **Hangman**
+
+  * String logic
+  * Conditional rendering
+  * User input handling
+
+* **Tic Tac Toe**
+
+  * State management
+  * Game logic
+  * UI updates based on state
+
+---
+
+## Class Assignment Idea
+
+### Like Button
+
+* Click to toggle like/unlike
+* Uses state
+* Visual feedback on click
+* Simple but powerful React concept
+
+---
+
+## Task: Dice Roller
+
+* Random number generation
+* Button click handling
+* State-based UI update
+* Good practice for:
+
+  * Events
+  * State
+  * Conditional rendering
+
+---
+
+**Summary:**
+Today focused on understanding state, hooks, component usage, and planning practical projects to reinforce React and JavaScript fundamentals.
