@@ -5,8 +5,8 @@ const Counter = () => {
     let [count, setCount] = useState(0);
 
     return (
-        <div className="parent-container min-h-screen flex justify-center items-center  bg-linear-to-tr from-black to-gray-700">
-            <div className="card-container flex flex-col items-center justify-center gap-5 p-3 bg-gray-800 rounded-4xl ">
+        <div className="parent-container min-h-screen flex justify-center items-center  bg-linear-to-tr from-black via-violet-600 to-blue-800">
+            <div className="card-container flex flex-col items-center justify-center gap-5 p-3 bg-black/40 rounded-4xl ">
                 <h1 className="text-3xl">Counter</h1>
                 <div className="text-4xl"> {count}</div>
                 <div className="button-container">
