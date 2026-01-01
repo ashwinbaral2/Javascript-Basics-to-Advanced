@@ -1,24 +1,28 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const Counter = () => {
-    const [count, setCount] = useState(0);
+    let [count, setCount] = useState(0);
 
     return (
-        <div id="button-container">
-            <div className="counter-box">
-                <div className="count">{count}</div>
-                    <h1>Counter</h1>
-                <div className="buttons">
-                    <div className="button green">
-                        <button onClick={() => setCount(count + 1)}>Increase</button>
-                    </div>
+        <div className="parent-container min-h-screen flex justify-center items-center  bg-linear-to-tr from-black to-gray-700">
+            <div className="card-container flex flex-col items-center justify-center gap-5 p-3 bg-gray-800 rounded-4xl ">
+                <h1 className="text-3xl">Counter</h1>
+                <div className="text-4xl"> {count}</div>
+                <div className="button-container">
+                    <button
+                        onClick={() => setCount(count + 1)}
+                        className="bg-green-500 hover:bg-green-700 p-3 m-1 rounded-3xl"
+                    >
+                        Increase
+                    </button>
 
-                    <div className="button red">
-                        <button onClick={() => setCount(count > 0 ? count - 1 : 0)}>
-                            Decrease
-                        </button>
-                    </div>
+                    <button 
+                        onClick={()=>{count>0? setCount(count -1 ):count }}
+                        className="bg-red-500 hover:bg-red-700 p-3 m-1 rounded-3xl"
+                    >
+                        Decrease
+                    </button>
                 </div>
             </div>
         </div>
