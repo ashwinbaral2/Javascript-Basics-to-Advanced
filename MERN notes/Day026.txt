@@ -1,0 +1,9 @@
+Date: 1 Jan 2026 - thu
+
+### ==== Day 026: MERN & React Notes ====
+
+functions like 
+
+
+Hooks...
+useEffect....
