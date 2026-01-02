@@ -1,9 +1,65 @@
-Date: 1 Jan 2026 - thu
+Date: 1 jan 2026 (thu)
+============================
+Day 026 - MERN & REACT
+============================
 
-### ==== Day 026: MERN & React Notes ====
+3 dice game idea
 
-functions like 
+* roll 3 dice
+* compare values
+* eliminate the lowest
+* repeat till one remains
+---------------------------------------------
+why this:
+
+* practice basic logic
+* understand state updates
+* see ui re-rendering
+
+---------------------------------------------
 
 
-Hooks...
-useEffect....
+time based functions (js)
+functions like:
+
+* setTimeout()  -> run once after delay
+* setInterval() -> run repeatedly
+
+used for:
+
+* timers
+* delayed actions
+* simple animations
+
+note:
+
+* clear timers when done
+
+---------------------------------------------
+
+
+ui logic
+
+* assign colors based on state
+* highlight active or eliminated dice
+
+---------------------------------------------
+
+
+react hooks
+
+* useState   -> store and update data
+* useEffect  -> handle side effects
+
+useEffect used for:
+
+* timers
+* game logic after state change
+* cleanup (clear interval)
+
+---------------------------------------------
+
+task
+
+* create a simple react game
+* focus on logic first, ui later
