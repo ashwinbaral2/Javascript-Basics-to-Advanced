@@ -22,7 +22,7 @@ const HOME = () => {
           
           {/* Login */}
           <Link href="/Login">
-            <div className="p-4 rounded-xl bg-indigo-600/80 hover:bg-indigo-700 transition cursor-pointer">
+            <div className="p-4 rounded-xl bg-purple-600/80 hover:bg-violet-700 transition cursor-pointer">
               <h2 className="text-xl font-semibold">🔐 Login Page</h2>
               <p className="text-sm text-indigo-100">
                 Controlled inputs, useState, event handling, client components,
@@ -33,7 +33,7 @@ const HOME = () => {
 
           {/* Register */}
           <Link href="/Register">
-            <div className="p-4 rounded-xl bg-purple-600/80 hover:bg-purple-700 transition cursor-pointer">
+            <div className="p-4 rounded-xl bg-purple-600/80 hover:bg-violet-700 transition cursor-pointer">
               <h2 className="text-xl font-semibold">📝 Register Page</h2>
               <p className="text-sm text-purple-100">
                 Form layout, Tailwind styling, and basic input handling.
@@ -43,10 +43,20 @@ const HOME = () => {
 
           {/* Counter */}
           <Link href="/Counter">
-            <div className="p-4 rounded-xl bg-pink-600/80 hover:bg-pink-700 transition cursor-pointer">
+            <div className="p-4 rounded-xl bg-purple-600/80 hover:bg-violet-700 transition cursor-pointer">
               <h2 className="text-xl font-semibold">🔢 Counter</h2>
               <p className="text-sm text-pink-100">
                 Understanding useState by counting button clicks.
+              </p>
+            </div>
+          </Link>
+
+          {/* Game */}
+          <Link href="/Game">
+            <div className="p-4 rounded-xl bg-purple-600/80 hover:bg-violet-700 transition cursor-pointer">
+              <h2 className="text-xl font-semibold">🎲  Game</h2>
+              <p className="text-sm text-pink-100">
+                Using JavaScript logic (random numbers, conditions, state) to build an interactive dice game.
               </p>
             </div>
           </Link>
@@ -62,6 +72,7 @@ const HOME = () => {
             <li>Client vs Server components in Next.js</li>
             <li>Tailwind utility-first styling</li>
             <li>Basic routing & navigation</li>
+            <li>Interactive game logic with state & events</li>
           </ul>
         </div>
       </div>
