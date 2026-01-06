@@ -1,0 +1,62 @@
+// ================== EASY LEVEL ==================
+
+// Initial Array
+let nums: number[] = [3, 1, 2, 5, 2];
+console.log("Initial array:", nums);
+
+// Q1: Add 9 to the end of the array
+nums.push(9);
+console.log("After push 9:", nums);
+
+// Q2: Remove the first element of the array
+nums.shift();
+console.log("After removing first element:", nums);
+
+// Q3: Concat two arrays
+const arr2: number[] = [10, 20, 30, 40];
+let combined = nums.concat(arr2);
+console.log("After concatenation:", combined);
+
+// Q4: Calculate total length of both arrays after concat
+console.log("Total length after concat:", combined.length);
+
+// Q5: Remove the last element from the combined array
+combined.pop();
+console.log("After removing last element:", combined);
+
+// Q6: Remove elements at index 2 & 3 (use splice)
+combined.splice(2, 2); // removes 2 elements starting at index 2
+console.log("After removing index 2 & 3:", combined);
+
+// ================== MEDIUM LEVEL ==================
+
+let ramScore: number[] = [95, 92, 87];
+let shyamScore: number[] = [77, 99, 99];
+
+// Q1: calculate the length of array
+console.log("Length of Ram's scores:", ramScore.length);
+console.log("Length of Shyam's scores:", shyamScore.length);
+
+// Q2: get last element & check if divisible by 21
+let ramLast = ramScore[ramScore.length - 1];
+console.log("Ram's last score:", ramLast, "Divisible by 21?", ramLast % 21 === 0);
+
+// Q3: check if Ram percentage > Shyam percentage
+let ramTotal = ramScore.reduce((a, b) => a + b, 0);
+let shyamTotal = shyamScore.reduce((a, b) => a + b, 0);
+let ramPercent = (ramTotal / (ramScore.length * 100)) * 100;
+let shyamPercent = (shyamTotal / (shyamScore.length * 100)) * 100;
+console.log("Ram %:", ramPercent, "Shyam %:", shyamPercent);
+console.log("Is Ram % greater than Shyam %?", ramPercent > shyamPercent);
+
+// ================== HARD LEVEL ==================
+
+// Q4: sort() use case in array
+let names: string[] = ["zara", "mohan", "ram", "hari"];
+console.log("Original names:", names);
+names.sort(); // alphabetical sort
+console.log("Sorted names:", names);
+
+// Swap the second & third items
+[names[1], names[2]] = [names[2], names[1]];
+console.log("After swapping 2nd & 3rd:", names);
