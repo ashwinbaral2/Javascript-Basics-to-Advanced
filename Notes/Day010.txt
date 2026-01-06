@@ -1,0 +1,84 @@
+Date:  Date: Dec 08, 2025 - mon
+
+/*
+  MERN CLASS NOTES — Expanded & Clear
+  -----------------------------------
+  These are your class notes, but cleaned up, expanded, and structured.
+*/
+
+// 1. Anonymous Functions
+// -----------------------
+// An anonymous function is simply a function without a name.
+// These are commonly used as callbacks inside:
+//   - map()
+//   - filter()
+//   - forEach()
+//   - reduce()
+// Why? Because you don't need to reuse the function elsewhere.
+
+const example = arr.map(function(item) {
+  return item * 2;
+});
+
+// Using arrow function (super common in MERN):
+const example2 = arr.map((item) => item * 2);
+
+
+// 2. Combining map() and filter()
+// -------------------------------
+// You can chain methods when transforming data.
+// Example: First filter odd numbers, then double the remaining ones.
+
+const nums = [1, 2, 3, 4, 5, 6];
+const processed = nums
+  .filter((n) => n % 2 === 0)   // filter even
+  .map((n) => n * 2);           // double them
+
+// This pattern is extremely common in MERN stack apps
+// when transforming API data (filtering users, mapping items, etc.)
+
+
+// 3. Accessing index & entire array in forEach(), map(), filter()
+// ---------------------------------------------------------------
+// All three share the same callback signature:
+//   (item, index, array)
+
+arr.forEach((item, index, array) => {
+  console.log(`Item: ${item}, Index: ${index}`);
+  // 'array' refers to the original array
+});
+
+// This is useful when you need to:
+//   - check previous/next elements
+//   - compare items with something inside the array
+//   - debug transformations
+
+
+// 4. Tomorrow's Topic: reduce()
+// -----------------------------
+// reduce() is a powerful loop used to boil an array down to a single value.
+// Examples where reduce() is used:
+//   - sum of numbers
+//   - total price in a cart
+//   - grouping data
+//   - counting frequency of values
+//   - converting arrays into objects
+
+const sum = nums.reduce((acc, curr) => acc + curr, 0);
+
+
+// 5. 'Bio' in CV
+// --------------
+// The 'bio' section in a CV usually includes:
+//   - who you are (1–2 line intro)
+//   - what you're good at (skills summary)
+//   - what you're working on currently
+//   - what you aim to do professionally
+// Should be concise, confident, and tailored.
+// Example:
+// "MERN-stack learner focusing on building clean, efficient web applications.
+// Passionate about JavaScript, problem-solving, and full‑stack development."
+
+*/
+
+

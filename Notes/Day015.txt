@@ -1,0 +1,14 @@
+
+Date:  Date: Dec 15, 2025 - mon
+
+
+optional chaining : (?.) --- imp for interview
+
+TO ACCESS 
+object --- dot operator
+array --- index
+
+
+
+
+

@@ -1,0 +1,177 @@
+Date:  Dec 22, 2025 - mon
+
+
+=====================================
+REACT — INTRODUCTION & HISTORY NOTES
+=====================================
+
+-------------------------------------
+1. WHAT IS REACT?
+-------------------------------------
+React is a JavaScript library used for building
+user interfaces, mainly for web applications.
+
+• Created by: Facebook (Meta)
+• Original creator: Jordan Walke
+• First released: 2013
+• Purpose: Build fast, reusable, component-based UIs
+
+React focuses ONLY on the UI layer (Front-End).
+
+
+-------------------------------------
+2. REACT VS OTHER FRONT-END FRAMEWORKS
+-------------------------------------
+
+AngularJS
+• Company: Google
+• Released: 2010
+• Status: Deprecated (2010–2021)
+• Note: AngularJS is NOT the same as Angular
+
+Angular
+• Company: Google
+• Released: 2016
+• Completely different from AngularJS
+
+React
+• Company: Facebook (Meta)
+• Released: 2013
+
+Vue.js
+• Released: 2014
+• Lightweight alternative, community-driven
+
+
+-------------------------------------
+3. FRONT-END DEVELOPMENT TOOLS
+-------------------------------------
+
+React (Web)
+• Used for websites
+• Examples:
+  - Netflix
+  - Discord
+  - Airbnb
+
+React Native (Mobile)
+• Framework to build mobile apps
+• Platforms: Android & iOS
+• Examples:
+  - Discord
+  - Tesla
+• Other mobile technologies:
+  - Kotlin
+  - Swift
+  - Java
+  - Objective-C
+  - Kotlin Multiplatform
+  - C#
+
+React Native Windows (Desktop)
+• Used to build desktop apps
+• Platforms: Windows & macOS
+• Backed by: Microsoft
+• Examples:
+  - Microsoft Teams
+  - MS Office
+  - Xbox apps
+
+
+-------------------------------------
+4. JAVASCRIPT-BASED DESKTOP APPS
+-------------------------------------
+(Mostly built using Electron)
+
+Popular Electron Apps:
+• Visual Studio Code
+• Slack
+• Discord
+• GitHub Desktop
+• Skype
+
+
+-------------------------------------
+5. REACT ECOSYSTEM & COMMUNITY
+-------------------------------------
+
+Microsoft
+• React Native Windows
+
+Vercel
+• Next.js (React-based full-stack framework)
+• With Next.js, Express is often NOT required
+
+Shopify
+• Remix (React-based full-stack framework)
+
+Expo
+• Tooling for React Native apps
+
+Gatsby
+• React-based static site generator
+
+
+-------------------------------------
+6. BIG COMPANIES USING REACT
+-------------------------------------
+
+• Facebook
+• Instagram
+• WhatsApp
+• Netflix
+• Amazon
+• Airbnb
+• Discord
+• Uber
+• PayPal
+• Reddit
+• LinkedIn
+
+
+-------------------------------------
+7. PLATFORM SUMMARY
+-------------------------------------
+
+React
+→ Web Applications
+→ Netflix, Discord
+
+React Native
+→ Mobile Applications (iOS / Android)
+→ Discord, Tesla
+
+React Native Windows
+→ Desktop Applications
+→ Teams, Office, Xbox
+
+
+-------------------------------------
+8. JOB MARKET INSIGHT
+-------------------------------------
+
+Popular Vacancy Combo:
+• Frontend + Backend
+• React / React Native + Node.js
+
+
+-------------------------------------
+9. IMPORTANT LEARNING NOTES
+-------------------------------------
+
+• Always refer to the official documentation
+• React ecosystem changes fast — docs save lives
+• Learning React frameworks (Next.js, Remix) is a plus
+
+
+-------------------------------------
+10. COMMON COMMAND
+-------------------------------------
+
+To run a React project:
+
+npm run dev
+
+-------------------------------------
+END OF NOTES
+-------------------------------------

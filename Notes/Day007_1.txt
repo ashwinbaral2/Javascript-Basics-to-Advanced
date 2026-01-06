@@ -1,0 +1,45 @@
+Date:  Date: Dec 04, 2025 - thu
+
+/**********************************************************
+Q1. Write a code that selects random months from an array 
+of all the months in a year and outputs them in a new array. 
+***********************************************************/
+
+
+
+/***********************************************/
+// 8. Get Names of Adults (age >= 18)
+/***********************************************/
+const people = [
+    { name: "John", age: 17 },
+    { name: "Jane", age: 22 },
+    { name: "Jim", age: 19 },
+    { name: "Jill", age: 15 }
+];
+
+const adults = people.filter(person => person.age >= 18).map(person => person.name);
+console.log(adults); // Output: ["Jane", "Jim"]
+/***********************************************/
+
+/***********************************************/
+// 13. Calculate Total Score with forEach
+/***********************************************/
+const scores = [10, 20, 30, 40, 50];
+let totalScore = 0;
+scores.forEach(score => {
+    totalScore += score;
+});
+console.log(totalScore); // Output: 150
+/***********************************************/
+// 14. Print Names in Uppercase with forEach
+/***********************************************/
+const names = ["Alice", "Bob", "Charlie", "David"];
+names.forEach(name => console.log(name.toUpperCase()));
+// Output:
+// ALICE
+// BOB
+// CHARLIE
+// DAVID
+
+
+

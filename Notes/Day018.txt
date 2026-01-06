@@ -1,0 +1,23 @@
+Date:  Dec 19, 2025 - fri
+
+Typescript cheatsheet to checkout...
+
+js === dynamic  ...but ts === static
+
+TOPICS TO STUDY:
+ - UNION TYPES, DYNAMIC TYPE, LITERAL TYPES, OBJECT 
+ - ARRAY, TUPLES AND Function
+ - TYPE ALIAS, INTERFACE AND ENUMS
+
+
+DESTRUCTURING OF ARRAY AND OBJECT
+REST OPERATOR
+
+react 
+-- folder structure, framework
+-- starting react project ---finishes in 25 days
+lovable.dev --- d3js.org
+
+prompt engineering
+
+
