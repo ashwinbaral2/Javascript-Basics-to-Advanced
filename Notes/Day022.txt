@@ -10,3 +10,15 @@ export vs export default == using export i can use it basically at any other pag
 
 javascript xml === jsx
 
+root(app) component
+ - header component
+ - nav bar component
+ - sidebar component
+ - footer
+
+components are reusable--component may have more component inside it.
+ -> stateless functional component
+ -> stateful class component
+
+
+

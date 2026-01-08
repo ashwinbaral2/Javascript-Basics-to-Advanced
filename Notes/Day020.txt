@@ -1,6 +1,97 @@
 Date:  Dec 24, 2025 - wed
 
+no notes
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> npx --ignore-existing tailwindcss init -p
+>>
+npx: the --ignore-existing argument has been removed.
+See `npm help exec` for more information
+npm error could not determine executable to run
+npm error A complete log of this run can be found in: C:\Users\aswin\AppData\Local\npm-cache\_logs\2026-01-07T13_28_46_777Z-debug-0.log
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> npx --ignore-existing tailwindcss init -p
+npx: the --ignore-existing argument has been removed.
+See `npm help exec` for more information
+npm error could not determine executable to run
+npm error A complete log of this run can be found in: C:\Users\aswin\AppData\Local\npm-cache\_logs\2026-01-07T13_28_53_391Z-debug-0.log
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> node ./node_modules/tailwindcss/lib/cli.js init -p
+node:internal/modules/cjs/loader:1424
+  throw err;
+  ^
 
+Error: Cannot find module 'C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend\node_modules\tailwindcss\lib\cli.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
 
+Node.js v24.12.0
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> npx tailwindcss -v
+npm error could not determine executable to run
+npm error A complete log of this run can be found in: C:\Users\aswin\AppData\Local\npm-cache\_logs\2026-01-07T13_30_54_487Z-debug-0.log
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> Remove-Item -Recurse -Force .\node_modules, package-lock.json
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> npm cache clean --force
+npm warn using --force Recommended protections disabled.
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> npm install react react-dom next
 
+added 364 packages, and audited 365 packages in 5m
 
+143 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> npm install -D tailwindcss postcss autoprefixer
+
+up to date, audited 365 packages in 5s
+
+143 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> npx tailwindcss -v
+npm error could not determine executable to run
+npm error A complete log of this run can be found in: C:\Users\aswin\AppData\Local\npm-cache\_logs\2026-01-07T13_40_45_232Z-debug-0.log
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> npm tailwindcss -v
+11.6.2
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> npm uninstall -g tailwindcss
+
+up to date in 693ms
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> npm tailwindcss -v
+11.6.2
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> npm uninstall -g tailwind
+
+up to date in 661ms
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> npm tailwindcss -v
+11.6.2
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> npm list -g --depth=0
+C:\Users\aswin\AppData\Roaming\npm
++-- ts-node@10.9.2
+`-- typescript@5.9.3
+
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> npm tailwindcss -v
+11.6.2
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> tailwindcss -v
+tailwindcss : The term 'tailwindcss' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path
+was included, verify that the path is correct and try again.
+At line:1 char:1
++ tailwindcss -v
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (tailwindcss:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> npx tailwindcss -v
+npm error could not determine executable to run
+npm error A complete log of this run can be found in: C:\Users\aswin\AppData\Local\npm-cache\_logs\2026-01-07T13_45_35_644Z-debug-0.log
+PS C:\Users\aswin\Myspace\Documents\Programming\Repo\basictoadvancejs\ashwinfrontend> npm install -D tailwindcss postcss autoprefixer
+
+up to date, audited 365 packages in 7s
+
+143 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
