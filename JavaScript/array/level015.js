@@ -29,6 +29,8 @@ const ingredients = [
     { ingredient: "Dragon Scale", potency: 15 },
 ];
 
+
+
 // Task: Use spread operator to combine all ingredients into a single potion object with a total potency
 
 // Exercise 4: City Population Tracker
