@@ -1,3 +1,6 @@
+// Welcome to WizardJS! 🧙‍♂️
+// Write JavaScript or TypeScript and see results instantly
+
 // 💡 Fun JS Exercises inspired by Dice Game logic,
 
 // Exercise 1: Treasure Chest
@@ -9,6 +12,9 @@ const treasures = [
 ];
 
 // Task: Use destructuring to log each treasure's name and value, then compute total value
+const [{name: name1, value: value1},{name: name2, value: value2}, {name: name3, value: value3}] = treasures;
+let total = value1 + value2 + value3;
+console.log(total);
 
 
 // Exercise 2: Space Mission
@@ -20,6 +26,12 @@ const astronauts = [
 ];
 
 // Task: Use array and object destructuring to print: "Astronaut X completed Y missions"
+const [{name: astro1, missions: [astro11, astro12]}, {name: astro2, missions: [astro21]}, {name: astro3, missions: [astro31, astro32, astro33]}] = astronauts;
+
+console.log(`astronaut ${astro1} completes mission to ${astro11} & ${astro12}`)
+console.log(`astronaut ${astro2} completes mission to ${astro21}`)
+console.log(`astronaut ${astro3} completes mission to ${astro31}, ${astro32} & ${astro33}`)
+
 
 // Exercise 3: Potion Mixer
 // Combine ingredients stored as objects into a new potion object.

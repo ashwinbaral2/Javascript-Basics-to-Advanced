@@ -56,7 +56,11 @@ const players = [
 // 2️⃣ Use object destructuring to get their names and scores
 // 3️⃣ Print: "Player X has Y points" for the first two players
 
-
+const [player1, player2] = players
+const {name : name1, score: score1} = player1
+const {name : name2, score: score2} = player2
+console.log(`Player ${name1} has ${score1} points`)//Player Alice has 10 points
+console.log(`Player ${name2} has ${score2} points`)//Player Bob has 15 points
 
 
 
