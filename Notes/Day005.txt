@@ -31,6 +31,8 @@ git rm filename               → delete file and stage
 git pull                      → fetch + merge updates
 git fetch                     → fetch only (no merge)
 git pull origin branch        → pull from specific branch
+git rev-list --count origin/main..HEAD → to count git commits not pushed
+
 
 5) Merging & Integration
 ------------------------
