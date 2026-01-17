@@ -17,7 +17,7 @@
 .card-container{
   display: flex;
   flex-direction: column;
-  box-shadow: 5px 5px 5px  cyan;
+  box-shadow: 5px 5px 8px  rgb(176, 245, 245);
 
   width: fit-content;
   border-radius: 10px;
@@ -25,9 +25,30 @@
   margin:10px;
 }
 .card-container:hover{
-  box-shadow: 5px 5px 15px cyan;
+  box-shadow: 5px 5px 15px rgb(124, 247, 247);
   transform: translateY(-4px) ;
   transition: transform 0.5s ease;
   
 }
+.card-wrapper{
+  border: 1px solid rgb(49, 90, 112);
+  width: fit-content;
+  padding: 10px;
+}
 
+.teal-glow {
+  background: #182e61; /* dark background looks best */
+  border-radius: 12px;
+  box-shadow:
+    0 0 10px rgba(20, 184, 166, 0.6),
+    0 0 20px rgba(20, 184, 166, 0.4),
+    0 0 40px rgba(20, 184, 166, 0.2);
+}
+.button{
+  width: fit-content;
+  padding: 10px;
+}
+.button:hover{
+ transform: translateY(-5px);
+ transition: transform 0.1s ease-in-out ;
+}

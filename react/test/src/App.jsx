@@ -5,7 +5,7 @@ import './styles/App.css';
 function App() {
   return (
     <>
-      <h1>My React App</h1>
+      <h1>Practice-React</h1>
       <Props />
     </>
   );
