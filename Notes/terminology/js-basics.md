@@ -38,7 +38,5 @@ console.log(jobStatus)//Active
 ---------------------------------------------------------
 3. Recursion Functions 
 ========================
-
-
-
-
+Recursion = a function that solves a problem by reducing it into a smaller version of the
+same problem.

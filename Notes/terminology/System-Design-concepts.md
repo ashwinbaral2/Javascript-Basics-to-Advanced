@@ -165,8 +165,3 @@
   - Check if request has already been processed.
   - Ignore duplicates.
 
-## 23. Additional Resources
-- **Blog**: [blog.algamaster.io](https://blog.algamaster.io)
-  - Weekly articles on system design.
-  - Real-world examples and interview tips.
-- **Newsletter**: Subscribe for in-depth content on system design concepts.
