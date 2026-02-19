@@ -1,6 +1,6 @@
 # MERN CLASS NOTES — DAY 057
 
-## 📆 Date: **February 12, 2026 (Monday)**
+## 📆 Date: **February 16, 2026 (Monday)**
 
 ---
 
