@@ -1,0 +1,103 @@
+
+# Understanding SSR, CSR, and Dynamic Imports in Next.js
+
+## 1. What is SSR?
+
+**SSR = Server-Side Rendering**
+
+* The **server builds the HTML** of your page first.
+* The browser just receives a **ready-made page**.
+* Good for **SEO** and **faster initial load**.
+* Limitation: **Browser-only code won’t work** (e.g., `window`, `document`).
+
+**Example:**
+
+```js
+export default function HomePage() {
+  return <h1>Hello from the server!</h1>;
+}
+```
+
+The server sends `<h1>Hello from the server!</h1>` as HTML to the browser.
+
+---
+
+## 2. What is CSR?
+
+**CSR = Client-Side Rendering**
+
+* The browser builds the page **after loading JavaScript**.
+* Good for **dynamic interactivity**.
+* Limitation: **Empty page at first**, can be bad for SEO.
+
+**Example:**
+
+```js
+import { useEffect, useState } from "react";
+
+export default function HomePage() {
+  const [time, setTime] = useState();
+  
+  useEffect(() => {
+    setTime(new Date().toLocaleTimeString());
+  }, []);
+  
+  return <h1>The time is: {time}</h1>;
+}
+```
+
+* Page shows after JS runs in the browser.
+
+---
+
+## 3. Dynamic Imports in Next.js
+
+Sometimes, components **break on the server** because they use browser-only features (`window`, `document`, localStorage, certain libraries).
+
+Next.js solution:
+
+```js
+import dynamic from "next/dynamic";
+
+const Navbar = dynamic(() => import("../components/Navbar"), { ssr: false });
+```
+
+### Explanation:
+
+* `dynamic()` → Load this component **on-demand** (not immediately).
+* `{ ssr: false }` → **Do not render on the server**, only show it in the browser.
+
+---
+
+## 4. When to use `ssr: false`
+
+* Component uses **window, document, or localStorage**.
+* Component uses **browser-only libraries** (maps, charts, sliders).
+* Avoids server-side errors like:
+
+```
+ReferenceError: window is not defined
+```
+
+**Trade-offs:**
+
+| Pros                    | Cons                           |
+| ----------------------- | ------------------------------ |
+| Stops crashes           | Component won’t be in SSR HTML |
+| Browser-only code works | Tiny delay before it appears   |
+
+---
+
+## 5. Quick Tip
+
+* Only disable SSR **when necessary**.
+* Otherwise, keep SSR for **SEO and performance benefits**.
+* If possible, **guard browser code** with checks instead of turning off SSR entirely:
+
+```js
+if (typeof window !== "undefined") {
+  // Browser-only code here
+}
+```
+
+---
