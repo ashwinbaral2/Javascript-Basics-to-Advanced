@@ -1,8 +1,4 @@
-Here you go — cleaned up, structured, and actually readable without frying your brain:
 
----
-
-````md
 # ⚡ JavaScript Async & Await — Complete Notes
 
 ## 🧠 What is Async?
