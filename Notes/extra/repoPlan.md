@@ -59,7 +59,7 @@ Make it a **core language + frontend theory powerhouse**.
 Here’s a tight but powerful structure:
 
 ```
-javascript-engineering-reference/
+Front-end engineering concepts/
 │
 ├── 01-javascript-core/
 │   ├── fundamentals/

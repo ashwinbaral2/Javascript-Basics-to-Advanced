@@ -1,34 +1,56 @@
 // Level 1 — Basic Understanding
 
-// Write an async function that returns the string "Hello World" after 2 seconds using Promise.
-function greet(){
-  setTimeout(() => console.log('hello world'), 4000);
-}
-greet();
+// Write an async function that returns the string "Hello Javascript" after 2 seconds using Promise.
+const greeting = new Promise((resolve, reject) => {
+	setTimeout(() => {
+		resolve("Hello Javascript");
+	}, 2000);
+})
+	.then((message) => {
+		console.log("The problem is resolved");
+		console.log(message);
+	})
+	.catch((err) => {
+		console.log(err);
+	});
+//--------------------------------------------------------------------------------------
 // Convert this Promise-based function to use async/await:
-
-// function fetchData() {
-//   return new Promise((resolve) => {
-//     setTimeout(() => resolve("Data fetched"), 1000);
-//   });
-// }
-// fetchdata().then(console.log);
-
-const data = async () =>{
+const greet = async () => {
+	let res = await new Promise((resolve) =>
+		setTimeout(() => {
+			resolve("Namaste javascript!");
+		}, 1000),
+	);
+  return res;
+};
+greet().then(console.log);
+greet();
+//--------------------------------------------------------------------------------------
+// Write a function fetchData() that returns a Promise which resolves with the string "Data fetched" after 1 second. Use .then() to log the result.
+function fetchData() {
   return new Promise((resolve) => {
     setTimeout(() => resolve("Data fetched"), 1000);
   });
 }
-data().then(console.log);
+fetchData().then(console.log);
 
-const webDataJSON = async () =>{ 
-let response = await fetch('https://dummyjson.com/products'); 
-let data = await response.json(); //parse to JS object 
-let jsonString = JSON.stringify(data); 
-console.log(jsonString); 
-} 
-webDataJSON()
+// const data = async () =>{
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve("Data fetched"), 1000);
+//   });
+// }
+// data().then(console.log);
 
-// Create a function getNumber() that returns a random number after 1 second. Use async/await to log the number.
+//--------------------------------------------------------------------------------------
+// Create a function getNumber() that returns a random number after 1 second.
+//  Use async/await to log the number.
 
-
+const getNumber = async() => {
+	let res = await new Promise((resolve)=>{
+		setTimeout(() => {
+		resolve(Math.random()) ;
+	}, 1000);
+	})
+	return res;
+};
+getNumber().then(console.log)
